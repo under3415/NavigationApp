@@ -20,8 +20,8 @@ namespace NavigationApp
         {
             ContentDialog dialog = new ContentDialog
             {
-                Content = "Press ALT + C ",
-                Title = "Dialog",
+                Content = "Press ALT, then C ",
+                Title = "Non Modal Dialog",
                 PrimaryButtonText = "OK"
             };
 

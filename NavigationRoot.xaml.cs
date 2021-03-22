@@ -1,4 +1,5 @@
 ﻿
+using System;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -13,6 +14,9 @@ namespace NavigationApp
     /// </summary>
     public sealed partial class NavigationRoot : Page
     {
+
+        private Random rnd = new Random();
+
         public NavigationRoot()
         {
             this.InitializeComponent();
@@ -25,7 +29,7 @@ namespace NavigationApp
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            this.Background = new SolidColorBrush(Color.FromArgb(255, 48, 179, 221));
+            this.Background = new SolidColorBrush(Color.FromArgb((byte)rnd.Next(256), (byte)rnd.Next(256), (byte)rnd.Next(256), (byte)rnd.Next(256)));
         }
     }
 }
