@@ -9,6 +9,9 @@
     Background="Chocolate">
 
     <Grid>
-        <Button x:Name="Button2" Content="Click For Dialog" Height="100" Width="200" Click="Button_Click" Background="Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <StackPanel>
+            <Button x:Name="Button2" Content="Click For Dialog" Height="100" Width="200" Click="Button_Click" Background="Black" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20"/>
+            <Button x:Name="Button3" Content="Change Color" Height="100" Width="200" Click="Button3_Click" Background="Black" VerticalAlignment="Center" HorizontalAlignment="Center" AccessKey="V" Margin="20"/>
+        </StackPanel>
     </Grid>
 </Page>
